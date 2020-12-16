@@ -1,10 +1,54 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+。by {
+  /**
+   * h-shadow：必选，表示水平方向阴影的位置，可以为负值；
+v-shadow：必选，表示垂直方向阴影的位置。可以为负值；
+blur：可选，表示模糊度；
+spread：可选，阴影的大小尺寸；
+color：可选，颜色；
+inset：可选，用于改写成内阴影，默认值是outset，可以改写成inset
+————————————————
+版权声明：本文为CSDN博主「缩缩北行鸟」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_38801354/article/details/76695998
+   */
+  box-shadow: 10px 10px 10px 10px black inset;
+}
+
+/**
+rgba属性类似于rgb属性用于表达颜色，区别在于rgba还多一个参数用于表示透明度。该透明度取值范围为0~1。
+与opacity不同的是，子元素不会被其影响，例：
+ */
+.by2 {
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/**
+ * 居中
+ */
+
+
+
+/**
+angle表示渐变线的方向，关键字值有to left，to right，to top，以及默认值to bottom，另外还可以使用角度如270deg
+color-top：指定初始颜色
+color：结尾颜色
+length 或 percentage ：定义止色位置
+ */
+.b3{
+  background:linear-gradient(#191c20 0%, #24292e 15%) ;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,12 +66,68 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+
+
+}
+.login_user{
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+}
+.app-background{
+  background-image: url("./image/timg.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
+.app-register{
+
+  width: 500px;
+  height: 30% ;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  background-color: #ffffff;
+}
+.App-login {
+  width: 340px;
+  height: 50% ;
+  position: absolute;
+  top: 20%;
+  left: 36%;
+
+  /*   background: rgba(255, 255, 255, 0.1) linear-gradient(to right, #040102 0%, #453139 100%);*/
+
+}
+
+.text{
+  text-align: center;
+}
+.login-form {
+  max-width: 800px;
+  max-height: 800px;
+  margin: 12px;
+}
+
+.login-form-1 {
+  max-width: 400px;
+}
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
 .App-link {
   color: #61dafb;
 }
-
+.editable-row .ant-form-explain {
+  position: absolute;
+  font-size: 12px;
+  margin-top: -4px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +135,5 @@
   to {
     transform: rotate(360deg);
   }
+
 }

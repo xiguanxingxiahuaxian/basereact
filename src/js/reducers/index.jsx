@@ -1,4 +1,4 @@
-import login from "../actions/login"
+import login from "../reducers/login"
 import {combineReducers} from "redux";
 const reducers={
     login
