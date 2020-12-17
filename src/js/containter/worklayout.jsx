@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import {Icon, Layout, Menu} from 'antd';
 import LayoutHeader from "../components/LayoutHeader";
 import {hashHistory, Link, Route, Router} from "react-router";
+import cs from "../page/cs";
 
 
 
@@ -31,7 +32,7 @@ class worklayout extends Component {
                                     title={
                                         <span><Icon type="user"/>发布信息</span>}>
                                     <Menu.Item key="1"><Link to={"/savenotify"}></Link>添加通知</Menu.Item>
-                                    <Menu.Item key="11"><Link to={"/notifylist"}></Link>通知列表</Menu.Item>
+                                    <Menu.Item key="11"><Link to={"/cs"}></Link>测试功能列表</Menu.Item>
 
                                 </SubMenu>
                                 <SubMenu
@@ -86,7 +87,7 @@ class worklayout extends Component {
                                         <Route path={"/Arealist"} component={Arealist}></Route>
                                         <Route path={"/tsposionlist"} component={TsPostionlist}></Route>
                                         <Route path={"/CarPostionlist"} component={CarPostionlist}></Route>*/}
-
+                                        <Route path={"/cs"} component={cs}></Route>
                                     </Router>
                                 </div>
                             </Content>
